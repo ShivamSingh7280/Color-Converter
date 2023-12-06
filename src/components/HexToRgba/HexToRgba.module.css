@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.wrapper {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.heading h2 {
+	text-align: center;
+	font-family: "poppins", sans-serif;
+}
+
+.heading button {
+	width: 60vw;
+	margin-left: 14vw;
+	height: 35px;
+	width: 150px;
+	border-radius: 8px;
+	border: 2px solid #34c94b;
+	font-size: medium;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500px;
+	background-color: #34c94b;
+	color: white;
+	font-size: large;
+}
+
+.content {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	justify-content: space-between;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500px;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+}
+
+.content input {
+	height: 35px;
+	width: 250px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500px;
+	font-size: large;
+	border-radius: 4px;
+	padding-left: 5px;
+}
+
+.copyButton {
+	height: 35px;
+	width: 35px;
+	border: 2px solid rgb(71, 55, 255);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.copyIcon:hover {
+	color: rgb(71, 55, 255);
+}
+
+.content button {
+	height: 35px;
+	width: 150px;
+	border-radius: 8px;
+	border: 2px solid rgb(71, 55, 255);
+	font-size: medium;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500px;
+	background-color: rgb(71, 55, 255);
+	color: white;
+	font-size: large;
+}
+
+.colorContainer {
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 100%;
+	min-width: 200px;
+	height: 200px;
+	border-radius: 4px;
+}
+
+@media only screen and (max-width: 952px) {
+	.content {
+		width: 600px;
+		gap: 20px;
+		font-weight: 400px;
+	}
+
+	.content input {
+		height: 30px;
+		width: 600px;
+	}
+
+	.copyButton {
+		height: 30px;
+		width: 30px;
+	}
+
+	.content button {
+		height: 30px;
+		width: 100%;
+	}
+
+	.colorContainer {
+		width: 100%;
+		min-width: 200px;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.content {
+		width: 300px;
+		gap: 15px;
+		font-weight: 200px;
+	}
+
+	.content input {
+		height: 30px;
+		width: 300px;
+	}
+
+	.copyButton {
+		height: 30px;
+		width: 30px;
+	}
+
+	.content button {
+		height: 30px;
+		width: 100%;
+	}
+
+	.colorContainer {
+		width: 100%;
+		min-width: 200px;
+		height: 200px;
+	}
+}
