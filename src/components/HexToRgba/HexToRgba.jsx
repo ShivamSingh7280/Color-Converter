@@ -27,10 +27,22 @@ const HexToRgba = () => {
 		}
 
 		// Converting each Hex character pair into an integer ::
-		const red = parseInt(hexColor?.substring(1, 3), 16);
-		const green = parseInt(hexColor?.substring(3, 5), 16);
-		const blue = parseInt(hexColor?.substring(5, 7), 16);
+		const hexVal = hexColor?.substring(1);
+		let red = "";
+		let blue = "";
+		let green = "";
 
+		if (hexVal.length === 6) {
+			red = parseInt(hexColor?.substring(1, 3), 16);
+			green = parseInt(hexColor?.substring(3, 5), 16);
+			blue = parseInt(hexColor?.substring(5, 7), 16);
+		} else if (hexVal.length === 3) {
+			red = parseInt(hexVal?.substring(0, 1), 16) * 17;
+			green = parseInt(hexVal?.substring(1, 2), 16) * 17;
+			blue = parseInt(hexVal?.substring(2, 3), 16) * 17;
+		}
+
+		console.log({ red, green, blue });
 		// Concatenating into an RGBA format ::
 		const rgba = `rgba(${red ? red : 0}, ${green ? green : 0} , ${
 			blue ? blue : 0

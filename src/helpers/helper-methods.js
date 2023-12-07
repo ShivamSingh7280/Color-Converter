@@ -8,7 +8,7 @@ export const clickToCopy = (value) => {
 	navigator.clipboard
 		.writeText(value)
 		.then(() => {
-			alert("Text copied to clipboard", value);
+			showToast("success", "Text copied to clipboard", value);
 		})
 		.catch((error) => {
 			console.log("Unable to copy text to clipboard", error);
@@ -27,7 +27,7 @@ export const isValidHexColor = (hexColor) => {
 
 		hexChars.shift();
 
-		if (hexChars?.length % 2 === 0) {
+		if (hexChars?.length % 3 === 0 && hexChars?.length <= 6) {
 			let invalidChar = hexChars?.find((each) => !Number(+each) && each > "f");
 			return invalidChar ? false : true;
 		} else {
